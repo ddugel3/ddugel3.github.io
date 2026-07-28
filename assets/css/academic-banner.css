@@ -44,7 +44,7 @@ main { padding-top: 125px; }
 
 .about { min-height: 245px; margin-bottom: 42px; }
 .about p { margin-top: 0; }
-.profile-photo { width: 220px; max-height: 265px; margin: 0 0 20px 32px; float: right; object-fit: cover; object-position: center 30%; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,.14); }
+.profile-photo { width: 220px; height: 280px; margin: 0 0 20px 32px; float: right; object-fit: cover; object-position: 48% 24%; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,.14); }
 .content-section { margin: 48px 0; scroll-margin-top: 92px; }
 h2 { margin: 0 0 20px; padding-bottom: 5px; border-bottom: 1px solid var(--border); color: var(--heading); font-size: 1.55rem; font-weight: 400; text-transform: lowercase; }
 
@@ -76,10 +76,10 @@ footer { padding: 18px 0; border-top: 1px solid var(--border); color: var(--mute
   main { padding-top: 105px; }
   .profile-header h1 { font-size: 2.15rem; }
   .about { min-height: 0; }
-  .profile-photo { width: 140px; max-height: 180px; margin-left: 20px; }
+  .profile-photo { width: 140px; height: 180px; margin-left: 20px; }
   .dated-list article { grid-template-columns: 1fr; gap: 1px; }
 }
 
 @media (max-width: 420px) {
-  .profile-photo { width: 110px; max-height: 145px; margin-left: 15px; }
+  .profile-photo { width: 110px; height: 145px; margin-left: 15px; }
 }
