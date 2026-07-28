@@ -1,28 +1,140 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Geonung Choi is a software researcher working on embodied AI, robot locomotion, and efficient machine learning.">
+  <meta name="author" content="Geonung Choi">
+  <meta property="og:title" content="Geonung Choi">
+  <meta property="og:description" content="Software researcher working on embodied AI, robot locomotion, and efficient machine learning.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ddugel3.github.io/">
+  <meta property="og:image" content="https://ddugel3.github.io/assets/img/geonung-choi.jpg">
+  <title>Geonung Choi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav container" aria-label="Primary navigation">
+      <div class="social-links">
+        <a href="https://drive.google.com/file/d/1oeGvlL0u475gE0MOL1GtwFLQ3Bb_XNLi/view?usp=sharing" target="_blank" rel="noreferrer" aria-label="Curriculum vitae" title="CV"><i class="fa-solid fa-file-lines"></i></a>
+        <a href="mailto:ddugel3@kookmin.ac.kr" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/geonung-choi-542bbb358" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/ddugel3" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <div class="page-links">
+        <a href="#about">about</a>
+        <a href="#publications">publications</a>
+        <a href="#projects">projects</a>
+        <button id="theme-toggle" type="button" aria-label="Toggle color theme" title="Change theme"><i class="fa-solid fa-circle-half-stroke"></i></button>
+      </div>
+    </nav>
+  </header>
 
+  <main class="container" id="about">
+    <header class="profile-header">
+      <h1><strong>Geonung</strong> Choi</h1>
+      <p>Software Researcher · Seoul, Republic of Korea<br><em>ddugel3 [at] kookmin [dot] ac [dot] kr</em></p>
+    </header>
 
-{% include career-profile.html %}
+    <section class="about">
+      <img class="profile-photo" src="assets/img/geonung-choi.jpg" alt="Portrait of Geonung Choi">
+      <div>
+        <p>I am an undergraduate student in the <a href="https://cs.kookmin.ac.kr/" target="_blank" rel="noreferrer">School of Software</a> at <a href="https://english.kookmin.ac.kr/" target="_blank" rel="noreferrer">Kookmin University</a>. I was an undergraduate research assistant at the Machine Intelligence Laboratory, advised by Prof. Jaekoo Lee.</p>
+        <p>My research interests lie in <strong>embodied AI, robot locomotion, and efficient machine learning</strong>. I am currently interested in terrain-aware cross-embodiment locomotion: shared low-level control policies that generalize across diverse robot morphologies and unseen terrains.</p>
+      </div>
+    </section>
 
-{% unless site.data.data.sidebar.education %}
-  {% include education.html %}
-{% endunless %}
+    <section class="content-section" id="news">
+      <h2>news</h2>
+      <table class="news-table">
+        <tbody>
+          <tr><th>Jun. 2026</th><td>Presented work on shared quadruped locomotion policies at IEIE 2026.</td></tr>
+          <tr><th>Jun. 2026</th><td>Co-authored <em>STAR</em> at the AUTOPILOT Workshop, CVPR 2026.</td></tr>
+          <tr><th>2026</th><td>Ranked 6th on both public and private leaderboards in the ACCIDENT @ CVPR 2026 Challenge.</td></tr>
+          <tr><th>Feb. 2026</th><td>Ranked 18th of 782 teams on the private leaderboard in the DACON × BDA competition.</td></tr>
+        </tbody>
+      </table>
+    </section>
 
-{% include experiences.html %}
+    <section class="content-section" id="publications">
+      <h2>publications</h2>
+      <div class="publication">
+        <p class="title">Conditional Fusion of Terrain and Morphology for Shared Quadruped Locomotion Policies</p>
+        <p><strong>Geonung Choi</strong>, Taejin Park, Jaekwon Lee, and Jaekoo Lee.</p>
+        <p class="venue"><em>Institute of Electronics and Information Engineers (IEIE)</em>, June 2026.</p>
+      </div>
+      <div class="publication">
+        <p class="title">STAR: Stage-wise Traffic Accident Detection via Optical-Flow-Guided Reasoning</p>
+        <p>Jaesung Sung, Jiwon Kim, Rian Ryu, Minseok Lim, <strong>Geonung Choi</strong>, Minju Jeong, and Jaekoo Lee.</p>
+        <p class="venue"><em>AUTOPILOT Workshop (non-archival), IEEE/CVF CVPR</em>, June 2026.</p>
+      </div>
+    </section>
 
-{% include certifications.html %}
+    <section class="content-section" id="experience">
+      <h2>research experience</h2>
+      <div class="dated-list">
+        <article>
+          <time>Oct. 2025 – Jul. 2026</time>
+          <div><p class="title">Undergraduate Research Assistant</p><p>Machine Intelligence Laboratory, Kookmin University</p><p class="muted">Advisor: Prof. Jaekoo Lee</p></div>
+        </article>
+        <article>
+          <time>Mar. 2025 – Jul. 2025</time>
+          <div><p class="title">Undergraduate Researcher</p><p>Undergraduate Research Opportunities Program, Kookmin University</p><p class="muted">Advisor: Prof. Changwoo Lee</p></div>
+        </article>
+      </div>
+    </section>
 
-{% include projects.html %}
+    <section class="content-section" id="projects">
+      <h2>selected projects & competitions</h2>
+      <ul class="project-list">
+        <li><a href="https://github.com/ddugel3/CatBoost-Transformer-Stacking" target="_blank" rel="noreferrer">DACON × BDA Learner-Completion Prediction</a> — CatBoost and Transformer stacking. Private 18 / 782, 2026.</li>
+        <li><a href="https://github.com/ddugel3/LoRA-lank-layer-analysis" target="_blank" rel="noreferrer">LoRA Rank/Layer Output-Characteristic Analysis</a> — Python, LLaMA-3, LoRA, 2026.</li>
+        <li><a href="https://github.com/ddugel3/paper2env" target="_blank" rel="noreferrer">Paper2Env</a> — Automatic generation of reproducible Docker environments from paper PDFs, 2026.</li>
+        <li><a href="https://github.com/ddugel3/sw-ai-contest" target="_blank" rel="noreferrer">2025 SW-Oriented University Digital Competition</a> — AI track; NLP, LLM, Hugging Face, and TF-IDF.</li>
+        <li><a href="https://github.com/ddugel3/Ondam" target="_blank" rel="noreferrer">Multi-Speaker-Recognition-Based Sign-Language Avatar Generation</a> — Python, C++, KoELECTRA, and T5, 2025.</li>
+        <li><a href="https://github.com/KOSS-ROKO/Team_RoKo_2020" target="_blank" rel="noreferrer">Golf-Playing Intelligent Humanoid Robot</a> — Python, OpenCV, and YOLOv4, 2023.</li>
+      </ul>
+    </section>
 
-{% include oss-contributions.html %}
+    <section class="content-section" id="education">
+      <h2>education & recognition</h2>
+      <div class="dated-list compact">
+        <article><time>2020 – 2026</time><div><p class="title">B.S. in Software, Kookmin University</p><p>School of Software, College of Computer Science. Expected August 2026.</p></div></article>
+        <article><time>2025</time><div><p class="title">Honorable Mention</p><p>KMU CS Interdisciplinary Capstone Design.</p></div></article>
+        <article><time>2023</time><div><p class="title">2nd Place, ESW Open Track</p><p>The 21st World Embedded Software Contest.</p></div></article>
+        <article><time>2023</time><div><p class="title">Commendation Award, Intelligent Humanoid Track</p><p>The 21st World Embedded Software Contest.</p></div></article>
+      </div>
+    </section>
 
-{% include publications.html %}
+    <section class="content-section" id="outreach">
+      <h2>leadership & outreach</h2>
+      <div class="dated-list compact">
+        <article><time>2024 – Present</time><div><p class="title">1:1 Coding Tutor, Coderland</p></div></article>
+        <article><time>2024 – 2025</time><div><p class="title">AI/SW Educational Volunteer</p><p>Five sessions at Yongmun H.S. and Hongik-Affiliated H.S.</p></div></article>
+        <article><time>2024 – 2025</time><div><p class="title">President, Kookmin University Open-Source Software Club</p></div></article>
+        <article><time>2023 – 2024</time><div><p class="title">Deputy Director, PR Department, 8th Student Council</p></div></article>
+      </div>
+    </section>
 
-{% include awards.html %}
+    <section class="contact">
+      <div class="contact-icons">
+        <a href="https://drive.google.com/file/d/1oeGvlL0u475gE0MOL1GtwFLQ3Bb_XNLi/view?usp=sharing" target="_blank" rel="noreferrer" aria-label="Curriculum vitae"><i class="fa-solid fa-file-lines"></i></a>
+        <a href="mailto:ddugel3@kookmin.ac.kr" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/geonung-choi-542bbb358" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/ddugel3" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <p>Email is the best way to reach me.</p>
+    </section>
+  </main>
 
-{% include leadership.html %}
-
-{% include recommendations.html %}
-
-{% include skills.html %}
+  <footer>
+    <div class="container">© 2026 Geonung Choi. Inspired by the <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noreferrer">al-folio</a> academic theme. Hosted by GitHub Pages.</div>
+  </footer>
+</body>
+</html>
