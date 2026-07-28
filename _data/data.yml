@@ -1,0 +1,139 @@
+sidebar:
+  position: left
+  about: false
+  education: true
+
+  name: Geonung Choi
+  tagline: Software Researcher
+  avatar:
+
+  email: ddugel3@kookmin.ac.kr
+  phone:
+  timezone: Asia/Seoul
+  citizenship: Republic of Korea
+  website: https://ddugel3.github.io/
+  linkedin:
+  github: ddugel3
+  pdf:
+
+  languages:
+    title: Languages
+    info:
+      - idiom: Korean
+        level: Native
+      - idiom: English
+        level: OPIc Advanced Low
+
+  interests:
+    title: Research Areas
+    info:
+      - item: Embodied AI
+      - item: Robot Locomotion
+      - item: Efficient Machine Learning
+
+career-profile:
+  title: Research Profile
+  summary: |
+    I am a software researcher interested in embodied AI, robot locomotion, and efficient machine learning. My current research focuses on terrain-aware cross-embodiment locomotion: developing shared low-level control policies that generalize across diverse robot morphologies and unseen terrains by jointly conditioning on morphology and perceptive terrain information.
+
+education:
+  title: Education
+  info:
+    - degree: B.S. in Software
+      university: Kookmin University
+      time: 2020 - 2026
+      details: |
+        School of Software, College of Computer Science  
+        Expected August 2026
+
+experiences:
+  title: Research Experience
+  info:
+    - role: Undergraduate Research Assistant
+      time: Oct. 2025 - Jul. 2026
+      company: Machine Intelligence Laboratory, Kookmin University
+      details: |
+        Advisor: Prof. Jaekoo Lee
+    - role: Undergraduate Researcher
+      time: Mar. 2025 - Jul. 2025
+      company: Undergraduate Research Opportunities Program, Kookmin University
+      details: |
+        Advisor: Prof. Changwoo Lee
+
+projects:
+  title: Selected Projects & Competitions
+  assignments:
+    - title: ACCIDENT @ CVPR 2026 Challenge
+      tagline: "Zero-shot accident detection from traffic surveillance videos. Public 6 / 106; Private 6 / 106."
+    - title: DACON × BDA Learner-Completion Prediction
+      link: https://github.com/ddugel3/CatBoost-Transformer-Stacking
+      tagline: "CatBoost and Transformer stacking. Public 50 / 782; Private 18 / 782."
+    - title: LoRA Rank/Layer Output-Characteristic Analysis
+      link: https://github.com/ddugel3/LoRA-lank-layer-analysis
+      tagline: "Python, LLaMA-3, LoRA."
+    - title: Paper2Env
+      link: https://github.com/ddugel3/paper2env
+      tagline: "Automatic generation of reproducible Docker environments from paper PDFs. Python, Ollama, LLM, Docker."
+    - title: 2025 SW-Oriented University Digital Competition
+      link: https://github.com/ddugel3/sw-ai-contest
+      tagline: "AI track. Python, NLP, LLM, Hugging Face, TF-IDF."
+    - title: Multi-Speaker-Recognition-Based Sign-Language Avatar Generation
+      link: https://github.com/ddugel3/Ondam
+      tagline: "Python, C++, KoELECTRA, T5."
+    - title: Golf-Playing Intelligent Humanoid Robot
+      link: https://github.com/KOSS-ROKO/Team_RoKo_2020
+      tagline: "Python, OpenCV, YOLOv4."
+    - title: Campus Navigation and Walking Voice-Guidance App
+      link: https://github.com/ddugel3/Open-SW-Developer-Contest
+      tagline: "Java, OpenCV, YOLOv4."
+
+publications:
+  title: Publications
+  papers:
+    - title: Conditional Fusion of Terrain and Morphology for Shared Quadruped Locomotion Policies
+      authors: Geonung Choi, Taejin Park, Jaekwon Lee, Jaekoo Lee
+      conference: Institute of Electronics and Information Engineers (IEIE), June 2026
+    - title: "STAR: Stage-wise Traffic Accident Detection via Optical-Flow-Guided Reasoning"
+      authors: Jaesung Sung, Jiwon Kim, Rian Ryu, Minseok Lim, Geonung Choi, Minju Jeong, Jaekoo Lee
+      conference: AUTOPILOT Workshop (non-archival), IEEE/CVF CVPR, June 2026
+
+leadership:
+  title: Leadership & Outreach
+  info:
+    - role: 1:1 Coding Tutor
+      time: Nov. 2024 - Present
+      company: Coderland
+      details: C++, Python, Scratch, Entry
+    - role: Coding Instructor
+      time: Jan. 2024 - Mar. 2025
+      company: Unicoding Study
+      details: C/C++, Python, Scratch, Entry, Algorithms
+    - role: AI/SW Educational Volunteer
+      time: Jan. 2024 - Aug. 2025
+      company: Yongmun H.S. & Hongik-Affiliated H.S.
+      details: Five educational sessions covering programming, GitHub, Raspbian, AI, and MLP
+    - role: President
+      time: Mar. 2024 - Feb. 2025
+      company: Kookmin University Open-Source Software Club (KOSS)
+    - role: Deputy Director, PR Department
+      time: Dec. 2023 - Dec. 2024
+      company: 8th Student Council (Connect)
+
+awards:
+  title: Awards & Scholarships
+  info:
+    - name: Honorable Mention, KMU CS Interdisciplinary Capstone Design
+      time: 2025
+    - name: 2nd Place, ESW Open Track, The 21st World Embedded Software Contest
+      time: 2023
+    - name: Commendation Award, Intelligent Humanoid Track, The 21st World Embedded Software Contest
+      time: 2023
+    - name: Academic Excellence Scholarships, National Program of Excellence in Software
+      time: 2023, 2025
+    - name: Academic Excellence Scholarship, University Innovation Support Program
+      time: 2025
+    - name: Special-Talent Scholarships, National Program of Excellence in Software
+      time: 2020
+
+footer: >
+  Orbit theme by <a href="https://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>.

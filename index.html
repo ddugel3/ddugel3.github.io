@@ -1,171 +1,28 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Geonung Choi — software researcher interested in embodied AI, robot locomotion, and efficient machine learning.">
-  <title>Geonung Choi</title>
-  <link rel="stylesheet" href="assets/css/portfolio.css">
-  <script src="assets/js/portfolio.js" defer></script>
-</head>
-<body>
-  <header>
-    <a class="name" href="#">Geonung Choi</a>
-    <nav aria-label="Main navigation">
-      <a href="#publications">Publications</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a class="cv-link" href="#" aria-disabled="true">CV</a>
-    </nav>
-  </header>
+---
+layout: default
+---
 
-  <main>
-    <section class="intro">
-      <h1>Geonung Choi</h1>
-      <p>I am a software researcher based in Seoul, Republic of Korea. My research interests lie in embodied AI, robot locomotion, and efficient machine learning.</p>
-      <p>I am currently an undergraduate student in Software at Kookmin University and was an undergraduate research assistant at the Machine Intelligence Laboratory, advised by Prof. Jaekoo Lee.</p>
-      <p class="links">
-        <a href="mailto:ddugel3@kookmin.ac.kr">Email</a>
-        <a href="https://github.com/ddugel3">GitHub</a>
-        <a class="cv-link" href="#" aria-disabled="true">CV</a>
-      </p>
-    </section>
 
-    <section id="research">
-      <h2>Research Interests</h2>
-      <p>Terrain-aware cross-embodiment locomotion: developing shared low-level control policies that generalize across diverse robot morphologies and unseen terrains by jointly conditioning on morphology and perceptive terrain information.</p>
-    </section>
+{% include career-profile.html %}
 
-    <section id="publications">
-      <h2>Publications</h2>
-      <ol class="entries publications">
-        <li>
-          <p class="entry-title">Conditional Fusion of Terrain and Morphology for Shared Quadruped Locomotion Policies</p>
-          <p><strong>Geonung Choi</strong>, Taejin Park, Jaekwon Lee, Jaekoo Lee.</p>
-          <p>Institute of Electronics and Information Engineers (IEIE), June 2026.</p>
-        </li>
-        <li>
-          <p class="entry-title">STAR: Stage-wise Traffic Accident Detection via Optical-Flow-Guided Reasoning</p>
-          <p>Jaesung Sung, Jiwon Kim, Rian Ryu, Minseok Lim, <strong>Geonung Choi</strong>, Minju Jeong, and Jaekoo Lee.</p>
-          <p>AUTOPILOT Workshop (non-archival), IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), June 2026.</p>
-        </li>
-      </ol>
-    </section>
+{% unless site.data.data.sidebar.education %}
+  {% include education.html %}
+{% endunless %}
 
-    <section id="experience">
-      <h2>Research Experience</h2>
-      <div class="entries">
-        <article>
-          <div>
-            <p class="entry-title">Machine Intelligence Laboratory, Kookmin University</p>
-            <p>Undergraduate Research Assistant · Advisor: Prof. Jaekoo Lee</p>
-          </div>
-          <time>Oct. 2025 – Jul. 2026</time>
-        </article>
-        <article>
-          <div>
-            <p class="entry-title">Undergraduate Research Opportunities Program, Kookmin University</p>
-            <p>Undergraduate Researcher · Advisor: Prof. Changwoo Lee</p>
-          </div>
-          <time>Mar. 2025 – Jul. 2025</time>
-        </article>
-      </div>
-    </section>
+{% include experiences.html %}
 
-    <section id="projects">
-      <h2>Selected Projects & Competitions</h2>
-      <div class="entries">
-        <article>
-          <div>
-            <p class="entry-title">ACCIDENT @ CVPR 2026 Challenge</p>
-            <p>Zero-shot accident detection from traffic surveillance videos. Public 6 / 106 · Private 6 / 106.</p>
-          </div>
-          <time>2026</time>
-        </article>
-        <article>
-          <div>
-            <p class="entry-title"><a href="https://github.com/ddugel3/CatBoost-Transformer-Stacking">DACON × BDA Learner-Completion Prediction</a></p>
-            <p>CatBoost and Transformer stacking. Public 50 / 782 · Private 18 / 782.</p>
-          </div>
-          <time>2026</time>
-        </article>
-        <article>
-          <div>
-            <p class="entry-title"><a href="https://github.com/ddugel3/LoRA-lank-layer-analysis">LoRA Rank/Layer Output-Characteristic Analysis</a></p>
-            <p>Python, LLaMA-3, LoRA.</p>
-          </div>
-          <time>2026</time>
-        </article>
-        <article>
-          <div>
-            <p class="entry-title"><a href="https://github.com/ddugel3/paper2env">Paper2Env</a></p>
-            <p>Automatic generation of reproducible Docker environments from paper PDFs. Python, Ollama, LLM, Docker.</p>
-          </div>
-          <time>2026</time>
-        </article>
-        <article>
-          <div>
-            <p class="entry-title"><a href="https://github.com/ddugel3/sw-ai-contest">2025 SW-Oriented University Digital Competition</a></p>
-            <p>AI track. Python, NLP, LLM, Hugging Face, TF-IDF.</p>
-          </div>
-          <time>2025</time>
-        </article>
-        <article>
-          <div>
-            <p class="entry-title"><a href="https://github.com/ddugel3/Ondam">Multi-Speaker-Recognition-Based Sign-Language Avatar Generation</a></p>
-            <p>Python, C++, KoELECTRA, T5.</p>
-          </div>
-          <time>2025</time>
-        </article>
-        <article>
-          <div>
-            <p class="entry-title"><a href="https://github.com/ddugel3/Open-SW-Developer-Contest">Campus Navigation and Walking Voice-Guidance App</a></p>
-            <p>Location-aware navigation for visually impaired users. Java, OpenCV, YOLOv4.</p>
-          </div>
-          <time>2023</time>
-        </article>
-      </div>
-    </section>
+{% include certifications.html %}
 
-    <section id="awards">
-      <h2>Awards & Scholarships</h2>
-      <ul class="plain-list">
-        <li>Honorable Mention, 2025 KMU CS Interdisciplinary Capstone Design, 2025.</li>
-        <li>2nd Place, ESW Open Track, The 21st World Embedded Software Contest, 2023.</li>
-        <li>Commendation Award, Intelligent Humanoid Track, The 21st World Embedded Software Contest, 2023.</li>
-        <li>Academic Excellence Scholarships, National Program of Excellence in Software, Fall 2023 and Spring 2025.</li>
-        <li>Academic Excellence Scholarship, University Innovation Support Program, Spring 2025.</li>
-        <li>Special-Talent Scholarships, National Program of Excellence in Software, 2020.</li>
-      </ul>
-    </section>
+{% include projects.html %}
 
-    <section id="education">
-      <h2>Education</h2>
-      <div class="entries">
-        <article>
-          <div>
-            <p class="entry-title">Kookmin University</p>
-            <p>B.S. in Software, School of Software, College of Computer Science</p>
-          </div>
-          <time>Mar. 2020 – Aug. 2026 (Expected)</time>
-        </article>
-      </div>
-    </section>
+{% include oss-contributions.html %}
 
-    <section id="leadership">
-      <h2>Leadership & Outreach</h2>
-      <div class="entries">
-        <article><div><p class="entry-title">1:1 Coding Tutor, Coderland</p><p>C++, Python, Scratch, Entry.</p></div><time>2024 – Present</time></article>
-        <article><div><p class="entry-title">Coding Instructor, Unicoding Study</p><p>C/C++, Python, Scratch, Entry, Algorithms.</p></div><time>2024 – 2025</time></article>
-        <article><div><p class="entry-title">AI/SW Educational Volunteer</p><p>Five sessions at Yongmun H.S. and Hongik-Affiliated H.S.</p></div><time>2024 – 2025</time></article>
-        <article><div><p class="entry-title">President, Kookmin University Open-Source Software Club</p></div><time>2024 – 2025</time></article>
-        <article><div><p class="entry-title">Deputy Director, PR Department, 8th Student Council</p></div><time>2023 – 2024</time></article>
-      </div>
-    </section>
-  </main>
+{% include publications.html %}
 
-  <footer>
-    <p>© <span id="current-year">2026</span> Geonung Choi.</p>
-  </footer>
-</body>
-</html>
+{% include awards.html %}
+
+{% include leadership.html %}
+
+{% include recommendations.html %}
+
+{% include skills.html %}
